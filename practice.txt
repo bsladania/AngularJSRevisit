@@ -35,4 +35,61 @@ Alternative
   });
 </script>
 
+Expressions
+
+{{name}}, ng-bind="name"
+
+Modules
+The module is a container for the different parts of an application and controllers always belong to a module.
+var app = angular.module('myApp', []);
+
+Directives
+
+New directives are created by using the .directive function.
+<body ng-app="myApp">
+  <my-favourite-hero></my-favourite-hero>
+<script>
+  var app = angular.module("myApp", []);
+  app.directive("myFavouriteHero", function() {
+    return {
+      restrict : "A",
+      template : "<h1>Akshay Kumar</h1>"
+    };
+  });
+</script>
+</body>
+
+The legal restrict values are:
+
+E for Element name
+A for Attribute
+C for Class
+M for Comment
+By default the value is EA, meaning that both Element names and attribute names can invoke the directive.
+
+Models
+
+The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+
+Validation
+<form ng-app="" name="myForm">
+  Email:
+    <input type="email" name="myAddress" ng-model="text">
+    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+</form>
+
+Data Binding
+Data binding in AngularJS is the synchronization between the model and the view.
+{{name}}, ng-bind="name"
+
+Controllers
+
+Scopes
+
+Filters
+
+
+
+
+
 
