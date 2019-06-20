@@ -83,10 +83,22 @@ Data binding in AngularJS is the synchronization between the model and the view.
 {{name}}, ng-bind="name"
 
 Controllers
+AngularJS controllers control the data of AngularJS applications.
+AngularJS controllers are regular JavaScript Objects.
 
 Scopes
+The scope is the binding part between the HTML (view) and the JavaScript (controller).
+The scope is an object with the available properties and methods.
+The scope is available for both the view and the controller.
 
 Filters
+
+{{ name | lowercase }}
+
+Service
+
+In AngularJS, a service is a function, or object, that is available for, and limited to, your AngularJS application.
+AngularJS has about 30 built-in services.
 
 
 
